@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cosmos Explorer — Planets</title>
+  <meta name="description" content="Planet information: Mercury to Neptune">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.jpg" alt="logo" class="logo">
+        <span class="brand-title">Cosmos Explorer</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-toggle" id="nav-toggle-2" aria-expanded="false" aria-controls="nav-list-2">☰</button>
+        <ul class="nav-list" id="nav-list-2">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planets.html" class="active">Planets</a></li>
+          <li><a href="explore.html">Explore</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle-2" aria-label="Toggle color theme">Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <h1>Planets</h1>
+      <p class="muted">Click a planet card to open more details and images.</p>
+
+      <div class="filters">
+        <label for="search-planet" class="sr-only">Search planets</label>
+        <input id="search-planet" placeholder="Search planets (e.g., 'mars')" />
+        <select id="filter-type">
+          <option value="all">All</option>
+          <option value="terrestrial">Terrestrial</option>
+          <option value="gas-giant">Gas Giant</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="grid planet-grid" id="planet-grid">
+      <!-- Mercury -->
+      <article class="planet-card" data-type="terrestrial" id="mercury" tabindex="0">
+        <img src="assets/planet-mercury.jpg" alt="Mercury">
+        <h3>Mercury</h3>
+        <p>Small, rocky, cratered world closest to the Sun.</p>
+        <div class="card-actions">
+          <button class="btn view-btn" data-name="Mercury" data-img="assets/planet-mercury.jpg" data-desc="Diameter: 4,880 km · Closest to Sun">View</button>
+        </div>
+      </article>
+
+      <!-- Venus -->
+      <article class="planet-card" data-type="terrestrial" id="venus" tabindex="0">
+        <img src="assets/planet-venus.webp" alt="Venus">
+        <h3>Venus</h3>
+        <p>Thick toxic atmosphere and runaway greenhouse effect.</p>
+        <div class="card-actions">
+          <button class="btn view-btn" data-name="Venus" data-img="assets/planet-venus.webp" data-desc="Diameter: 12,104 km · Thick CO₂ atmosphere">View</button>
+        </div>
+      </article>
+
+      <!-- Earth -->
+      <article class="planet-card" data-type="terrestrial" id="earth" tabindex="0">
+        <img src="assets/planet-earth.jpg" alt="Earth">
+        <h3>Earth</h3>
+        <p>Our Lovely Home - The only known world that supports life.</p>
+        <div class="card-actions">
+          <button class="btn view-btn" data-name="Earth" data-img="assets/planet-earth.jpg" data-desc="Diameter: 12,742 km · Life-supporting atmosphere">View</button>
+        </div>
+      </article>
+
+      <!-- Mars -->
+      <article class="planet-card" data-type="terrestrial" id="mars" tabindex="0">
+        <img src="assets/planet-mars.jpg" alt="Mars">
+        <h3>Mars</h3>
+        <p>Red desert with the largest volcano in the solar system.</p>
+        <div class="card-actions">
+          <button class="btn view-btn" data-name="Mars" data-img="assets/planet-mars.jpg" data-desc="Diameter: 6,779 km · Hosts Olympus Mons">View</button>
+        </div>
+      </article>
+
+      <!-- Jupiter -->
+      <article class="planet-card" data-type="gas-giant" id="jupiter" tabindex="0">
+        <img src="assets/planet-jupiter.jpg" alt="Jupiter">
+        <h3>Jupiter</h3>
+        <p>Largest planet — powerful storms and many moons.</p>
+        <div class="card-actions">
+          <button class="btn view-btn" data-name="Jupiter" data-img="assets/planet-jupiter.jpg" data-desc="Diameter: 139,820 km · Gas giant with Great Red Spot">View</button>
+        </div>
+      </article>
+
+      <!-- Saturn -->
+      <article class="planet-card" data-type="gas-giant" id="saturn" tabindex="0">
+        <img src="assets/planet-saturn.jpg" alt="Saturn">
+        <h3>Saturn</h3>
+        <p>Jewel of the Solar System - The Iconic rings made of ice and rock. Holy Mog. </p>
+        <div class="card-actions">
+          <button class="btn view-btn" data-name="Saturn" data-img="assets/planet-saturn.jpg" data-desc="Diameter: 116,460 km · Prominent ring system">View</button>
+        </div>
+      </article>
+
+      <!-- Uranus -->
+      <article class="planet-card" data-type="gas-giant" id="uranus" tabindex="0">
+        <img src="assets/planet-uranus.jpg" alt="Uranus">
+        <h3>Uranus</h3>
+        <p>Ice giant tilted on its side — unusual seasons.</p>
+        <div class="card-actions">
+          <button class="btn view-btn" data-name="Uranus" data-img="assets/planet-uranus.jpg" data-desc="Diameter: 50,724 km · Ice giant, extreme tilt">View</button>
+        </div>
+      </article>
+
+      <!-- Neptune -->
+      <article class="planet-card" data-type="gas-giant" id="neptune" tabindex="0">
+        <img src="assets/planet-neptune.jpg" alt="Neptune">
+        <h3>Neptune</h3>
+        <p>Farthest giant with strong winds and storms.</p>
+        <div class="card-actions">
+          <button class="btn view-btn" data-name="Neptune" data-img="assets/planet-neptune.jpg" data-desc="Diameter: 49,244 km · Deep blue, windy">View</button>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Modal (planet detail) -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-panel" role="document">
+      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+      <div class="modal-body">
+        <img id="modal-img" src="assets/placeholder.png" alt="">
+        <div class="modal-text">
+          <h3 id="modal-title">Title</h3>
+          <p id="modal-desc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="year-2"></span> Cosmos Explorer</p>
+      <nav class="foot-nav">
+        <a class="btn" href="index.html">Home</a>
+        <a class="btn" href="explore.html">Explore</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

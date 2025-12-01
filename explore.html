@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cosmos Explorer — Explore</title>
+  <meta name="description" content="Take a short astronomy quiz and view a gallery.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.jpg" alt="logo" class="logo">
+        <span class="brand-title">Cosmos Explorer</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-toggle" id="nav-toggle-3" aria-expanded="false" aria-controls="nav-list-3">☰</button>
+        <ul class="nav-list" id="nav-list-3">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planets.html">Planets</a></li>
+          <li><a href="explore.html" class="active">Explore</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle-3" aria-label="Toggle color theme">Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="quiz">
+      <h1>Quick Astronomy Quiz</h1>
+      <p class="muted">5 questions — immediate feedback. No data is stored.</p>
+
+      <div id="quiz-card" class="card">
+        <div id="quiz-question" class="quiz-question">Question text</div>
+        <div id="quiz-choices" class="quiz-choices"></div>
+        <div class="quiz-controls">
+          <button id="next-q" class="btn" disabled>Next</button>
+          <button id="restart-q" class="btn ghost" style="display:none">Restart</button>
+        </div>
+        <div id="quiz-feedback" class="quiz-feedback" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="grid gallery-grid">
+        <img src="assets/planet-earth.jpg" alt="Earth" class="gallery-item" data-src="assets/planet-earth.jpg">
+        <img src="assets/planet-mars.jpg" alt="Mars" class="gallery-item" data-src="assets/planet-mars.jpg">
+        <img src="assets/planet-jupiter.jpg" alt="Jupiter" class="gallery-item" data-src="assets/planet-jupiter.jpg">
+        <img src="assets/planet-saturn.jpg" alt="Saturn" class="gallery-item" data-src="assets/planet-saturn.jpg">
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+      <div class="accordion">
+        <button class="acc-btn">Why is the sky dark at night?</button>
+        <div class="acc-panel">
+          <p>Because most of the universe is empty and distant stars' light doesn't fill the entire sky; Olbers' paradox explains this in detail.</p>
+        </div>
+
+        <button class="acc-btn">How long does light from the Sun take to reach Earth?</button>
+        <div class="acc-panel">
+          <p>About 8 minutes and 20 seconds.</p>
+        </div>
+
+        <button class="acc-btn">Are there more planets beyond Neptune?</button>
+        <div class="acc-panel">
+          <p>There are dwarf planets like Pluto and countless small bodies in the Kuiper Belt and Oort Cloud; research continues into distant objects.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal reused for gallery -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-panel" role="document">
+      <button id="modal-close-2" class="modal-close" aria-label="Close">✕</button>
+      <div class="modal-body">
+        <img id="modal-img-2" src="assets/placeholder.png" alt="">
+        <div class="modal-text">
+          <h3 id="modal-title-2">Image</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="year-3"></span> Cosmos Explorer</p>
+      <nav class="foot-nav">
+        <a class="btn" href="index.html">Home</a>
+        <a class="btn" href="planets.html">Planets</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

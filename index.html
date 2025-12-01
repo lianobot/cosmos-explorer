@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos Explorer — Home</title>
+    <meta name="description" content="Cosmos Explorer — learn about planets and explore the universe">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.jpg" alt="Cosmos Explorer logo" class="logo">
+        <span class="brand-title">Cosmos Explorer</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="planets.html">Planets</a></li>
+          <li><a href="explore.html">Explore</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" aria-label="Toggle color theme">Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-left">
+          <h1>Discover the majesty of the Solar System</h1>
+          <p>Interactive guides, stunning imagery, and a short quiz to test your space knowledge. Built with accessibility and mobile-first responsive design.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="planets.html">Explore Planets</a>
+            <a class="btn ghost" href="explore.html">Take the Quiz</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="assets/JamesWebbNebula4k.jpg" alt="Nebula" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <section class="featured container">
+      <h2>Featured Planets</h2>
+      <div class="grid featured-grid">
+        <article class="planet-card">
+          <img src="assets/planet-earth.jpg" alt="Earth" loading="lazy">
+          <h3>Earth</h3>
+          <p>Our home — the only known world with life.</p>
+          <a class="btn" href="planets.html#earth">Learn More</a>
+        </article>
+
+        <article class="planet-card">
+          <img src="assets/planet-mars.jpg" alt="Mars" loading="lazy">
+          <h3>Mars</h3>
+          <p>The red planet — a focus of robotic and future human missions.</p>
+          <a class="btn" href="planets.html#mars">Learn More</a>
+        </article>
+
+        <article class="planet-card">
+          <img src="assets/planet-jupiter.jpg" alt="Jupiter" loading="lazy">
+          <h3>Jupiter</h3>
+          <p>Gas giant, stormy banded atmosphere and huge magnetosphere. Keeping Earth safe.</p>
+          <a class="btn" href="planets.html#jupiter">Learn More</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about container">
+      <h2>About Cosmos Explorer</h2>
+      <p>This mini site is a fun little project I made to demonstrate responsive web design and interactive client-side features: theme switching, modal galleries, and a fun astronomy quiz.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="year"></span> Cosmos Explorer</p>
+      <nav class="foot-nav" aria-label="Footer">
+        <a class="btn" href="planets.html">Planets</a>
+        <a class="btn" href="explore.html">Explore</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
