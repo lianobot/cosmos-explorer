@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -34,20 +34,10 @@
     <section class="controls">
       <h1>Planets</h1>
       <p class="muted">Click a planet card to open more details and images.</p>
-
-      <div class="filters">
-        <label for="search-planet" class="sr-only">Search planets</label>
-        <input id="search-planet" placeholder="Search planets (e.g., 'mars')" />
-        <select id="filter-type">
-          <option value="all">All</option>
-          <option value="terrestrial">Terrestrial</option>
-          <option value="gas-giant">Gas Giant</option>
-        </select>
-      </div>
     </section>
 
     <section class="grid planet-grid" id="planet-grid">
-      <!-- Mercury -->
+      <!-- mercury -->
       <article class="planet-card" data-type="terrestrial" id="mercury" tabindex="0">
         <img src="assets/planet-mercury.jpg" alt="Mercury">
         <h3>Mercury</h3>
@@ -57,7 +47,7 @@
         </div>
       </article>
 
-      <!-- Venus -->
+      <!-- venus -->
       <article class="planet-card" data-type="terrestrial" id="venus" tabindex="0">
         <img src="assets/planet-venus.webp" alt="Venus">
         <h3>Venus</h3>
@@ -67,7 +57,7 @@
         </div>
       </article>
 
-      <!-- Earth -->
+      <!-- EArth -->
       <article class="planet-card" data-type="terrestrial" id="earth" tabindex="0">
         <img src="assets/planet-earth.jpg" alt="Earth">
         <h3>Earth</h3>
@@ -77,7 +67,7 @@
         </div>
       </article>
 
-      <!-- Mars -->
+      <!-- mars -->
       <article class="planet-card" data-type="terrestrial" id="mars" tabindex="0">
         <img src="assets/planet-mars.jpg" alt="Mars">
         <h3>Mars</h3>
@@ -87,7 +77,7 @@
         </div>
       </article>
 
-      <!-- Jupiter -->
+      <!-- jupiter -->
       <article class="planet-card" data-type="gas-giant" id="jupiter" tabindex="0">
         <img src="assets/planet-jupiter.jpg" alt="Jupiter">
         <h3>Jupiter</h3>
@@ -97,7 +87,7 @@
         </div>
       </article>
 
-      <!-- Saturn -->
+      <!-- saturn -->
       <article class="planet-card" data-type="gas-giant" id="saturn" tabindex="0">
         <img src="assets/planet-saturn.jpg" alt="Saturn">
         <h3>Saturn</h3>
@@ -107,7 +97,7 @@
         </div>
       </article>
 
-      <!-- Uranus -->
+      <!-- uranus -->
       <article class="planet-card" data-type="gas-giant" id="uranus" tabindex="0">
         <img src="assets/planet-uranus.jpg" alt="Uranus">
         <h3>Uranus</h3>
@@ -117,7 +107,7 @@
         </div>
       </article>
 
-      <!-- Neptune -->
+      <!-- neptune -->
       <article class="planet-card" data-type="gas-giant" id="neptune" tabindex="0">
         <img src="assets/planet-neptune.jpg" alt="Neptune">
         <h3>Neptune</h3>
@@ -130,7 +120,7 @@
 
   </main>
 
-  <!-- Modal (planet detail) -->
+  <!-- planet's details -->
   <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
     <div class="modal-panel" role="document">
       <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
@@ -146,7 +136,7 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <p>&copy; <span id="year-2"></span> Cosmos Explorer</p>
+      <p>&copy; 2025 Cosmos Explorer</p>
       <nav class="foot-nav">
         <a class="btn" href="index.html">Home</a>
         <a class="btn" href="explore.html">Explore</a>

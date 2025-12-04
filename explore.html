@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -31,21 +31,6 @@
   </header>
 
   <main class="container">
-    <section class="quiz">
-      <h1>Quick Astronomy Quiz</h1>
-      <p class="muted">5 questions — immediate feedback. No data is stored.</p>
-
-      <div id="quiz-card" class="card">
-        <div id="quiz-question" class="quiz-question">Question text</div>
-        <div id="quiz-choices" class="quiz-choices"></div>
-        <div class="quiz-controls">
-          <button id="next-q" class="btn" disabled>Next</button>
-          <button id="restart-q" class="btn ghost" style="display:none">Restart</button>
-        </div>
-        <div id="quiz-feedback" class="quiz-feedback" aria-live="polite"></div>
-      </div>
-    </section>
-
     <section class="gallery">
       <h2>Gallery</h2>
       <div class="grid gallery-grid">
@@ -77,14 +62,14 @@
     </section>
   </main>
 
-  <!-- Modal reused for gallery -->
+  <!-- reusing same modal for gallery -->
   <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
     <div class="modal-panel" role="document">
       <button id="modal-close-2" class="modal-close" aria-label="Close">✕</button>
       <div class="modal-body">
         <img id="modal-img-2" src="assets/placeholder.png" alt="">
         <div class="modal-text">
-          <h3 id="modal-title-2">Image</h3>
+          <h3 id="modal-title-2">Title</h3>
         </div>
       </div>
     </div>
@@ -92,7 +77,7 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <p>&copy; <span id="year-3"></span> Cosmos Explorer</p>
+      <p>&copy; 2025 Cosmos Explorer</p>
       <nav class="foot-nav">
         <a class="btn" href="index.html">Home</a>
         <a class="btn" href="planets.html">Planets</a>
